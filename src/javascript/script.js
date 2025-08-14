@@ -29,8 +29,6 @@
             video.playbackRate = 3;
         } else if (is4xSpeedShortcut(event)) {
             video.playbackRate = 4;
-        } else if (is5xSpeedShortcut(event)) {
-            video.playbackRate = 5;
         } else if (is35xSpeedShortcut(event)) {
             video.playbackRate = 3.5
         }
