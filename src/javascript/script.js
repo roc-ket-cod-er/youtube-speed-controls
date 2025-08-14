@@ -33,7 +33,8 @@
             video.playbackRate = 5;
         } else if (is35xSpeedShortcut(event)) {
             video.playbackRate = 3.5
-
+        }
+        
         displayTextInMediaElement(video.playbackRate);
     });
 
