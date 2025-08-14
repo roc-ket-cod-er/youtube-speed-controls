@@ -31,7 +31,8 @@
             video.playbackRate = 4;
         } else if (is5xSpeedShortcut(event)) {
             video.playbackRate = 5;
-        }
+        } else if (is35xSpeedShortcut(event)) {
+            video.playbackRate = 3.5
 
         displayTextInMediaElement(video.playbackRate);
     });
@@ -129,7 +130,7 @@
 
     // Alt + ` or Alt + ' for 5x speed (on Windows)
     // Option + ` or Option + ' for 5x speed (on Mac)
-    const is5xSpeedShortcut = (e) =>
+    const is35xSpeedShortcut = (e) =>
         isToggleSpeedShortcut(e) && e.altKey
         && !e.ctrlKey && !e.metaKey;
 
